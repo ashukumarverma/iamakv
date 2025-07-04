@@ -1,7 +1,15 @@
+import GithubInfo from "@/components/github/GithubInfo";
+import LeetCodeInfo from "@/components/leetcode/LeetCodeInfo";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className={`font-bold text-2xl`}>Hi I am Ashutosh</h1>
+    <div className="w-full flex flex-col lg:flex-row max-md:items-center lg:gap-8 gap-4">
+      <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-xl border-gray-100 p-6">
+        <GithubInfo />
+      </div>
+      <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-xl border-gray-100 p-6">
+        <LeetCodeInfo />
+      </div>
     </div>
   );
 }
